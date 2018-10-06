@@ -1,13 +1,9 @@
-a = input("Enter the string: ")
-b = a.lower()
+ 
+s = input("input string")
 
-count ={}
+counts = {}
+for c in s.lower():
+    counts[c] = counts.get(c, 0) +1# trả về giá trị của một đói tuongj nếu đói tượng đáy là đau là 1, cn lần 2 là 2
 
-for i in range(len(list(b))):
-    if list(b)[i] == " ":
-        list(b).remove(list(b)[i])
-    else:    
-        count[(list(b)[i])] = list(b).count(list(b)[i])
-
-for k,v in sorted(count.items()):
-    print(k,v)   
+for c, n in sorted(counts.items()):
+    print(c, n)
