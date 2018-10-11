@@ -5,5 +5,6 @@ msg = Message ('nắng sáng lên rồi dậy lên nương đã sáng rồi ai �
 ,to='kienvtgch16382@fpt.edu.vn',text='con gà gáy té le sáng rồi ai êi' )
 my_date= datetime.time(7,0)
 moment = datetime.datetime.now().time()
-if moment > my_date:
-    gmail.send(msg)
+while True:
+    if moment > my_date:
+        gmail.send(msg)

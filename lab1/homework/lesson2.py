@@ -6,9 +6,9 @@ db = client['c4e']
 blog = db['posts']
 posts_list = blog.find()
 posts ={
-    'name':'Vũ Trung Kiên',
-    'feelings':'very happy',
-    'want to say':"that's great of you",
+    'title':'very happy',
+    'author':'Vũ Trung Kiên',
+    'content':"that's great of you",
 }
 blog.insert_one(posts)
 print(posts)
