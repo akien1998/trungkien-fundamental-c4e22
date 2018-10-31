@@ -1,0 +1,57 @@
+html,body{
+    height: 100%;
+}
+*{
+    font-size: 1.1rem;
+}
+
+
+#root {
+    /* font-size: 1.1rem;
+    /* padding-top:4px ;
+    padding-right: 8px;
+    padding-left: 10px; */
+    /* padding:  6px 10px 6px 10px;
+    border-radius:6px; 
+    background-color:rgb(29, 29, 46);
+    color: white; */ 
+    width: 100%;
+    height: 100%;
+    background-color:blueviolet ;
+    display: flex;
+    flex-flow: row;
+  
+   justify-content: space-between;
+}
+*{
+    border: 1px red ridge ;
+}
+#react{
+    display: flex;
+    flex-flow: column;
+    align-items: center;/* cho nó gọn lại , vao chsnh giữa*/
+
+}
+button{
+   font-size: 1.1rem;
+     padding-top:4px ;
+    padding-right: 8px;
+    padding-left: 10px; 
+    padding:  6px 10px 6px 10px;
+    border-radius:6px; 
+    background-color:rgb(29, 29, 46);
+    color:blue; 
+    cursor: alias;
+}
+#input{
+    width: 33.33%;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+.input_choose{
+    width: 40%;
+    border-radius: 3.1px;
+    margin-bottom:4px; 
+    
+}
