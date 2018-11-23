@@ -9,11 +9,13 @@
 </head>
 <body>
     <div id="root">
-        {% for p in polls %}
-            <div>
-                <h3>{{p.question}}</h3>
-            </div>
-        {% endfor %}       
+        <h3>{{ p.question }}</h3>
+        {% for option in p.options %}
+        <div>{{ option }}</div>
+        {% endfor %}
     </div>
+    <input type="text" name="user" placeholder="USER">
+    
+
 </body>
 </html>

@@ -1,22 +1,23 @@
 from poll import Poll
-import string
-import mlab
 from random import choice
+import mlab
 
-#1: ket noi vs database
-
+#connect to DB
 mlab.connect()
 
-# 2: preare chuan bi data
-q1 = "Hackathon an gi ?"
-q2 = "Sau demo day di dau ?"
-q3 = "Sao cua Linh chua chay"
-alphabet="abcdefghijklmnopqrstuvwxyz".upper()
-c =""
+#2. Prepare data
+q = "Hackathon ăn gì?"
+opts = [
+    "Pizza",
+    "Bánh mì hội an"
+    "Phở xào"
+]
+alphabet = "abcdefghijklmnopqrstuvwxyz".upper()
+c = ""
 for _ in range(6):
-    c+= choice(alphabet)
+    c+= choice(alphabet)   
+#3. Creat document
+p = Poll(question=q,options=opts,code=c)
 
-# 3 : tao documant
-p = Poll(question1=q1,question2= q2,question3=q3,code=c )
-#4 luu
+#4. Save
 p.save()
